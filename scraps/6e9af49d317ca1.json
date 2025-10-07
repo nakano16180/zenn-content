@@ -1,0 +1,28 @@
+{
+  "title": "WSL環境にaqua入れてみた",
+  "closed": false,
+  "archived": false,
+  "created_at": "2024-05-08",
+  "comments": [
+    {
+      "author": "nakano16180",
+      "created_at": "2024-05-08",
+      "body_markdown": "インストール方法はいろいろあるけど、[シェルスクリプトのインストーラー](https://aquaproj.github.io/docs/products/aqua-installer/#shell-script)を使った"
+    },
+    {
+      "author": "nakano16180",
+      "created_at": "2024-05-08",
+      "body_markdown": "入った\n![](https://storage.googleapis.com/zenn-user-upload/dcedd95325f9-20240508.png)\n"
+    },
+    {
+      "author": "nakano16180",
+      "created_at": "2024-05-08",
+      "body_markdown": "`aqua init` でaqua.ymlを作成し、以下のように編集\n![](https://storage.googleapis.com/zenn-user-upload/011485531fe2-20240508.png)\n"
+    },
+    {
+      "author": "nakano16180",
+      "created_at": "2024-05-08",
+      "body_markdown": "`aqua i`でghのインストールができた\n![](https://storage.googleapis.com/zenn-user-upload/6c22002192ed-20240508.png)\n"
+    }
+  ]
+}

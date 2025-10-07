@@ -1,0 +1,23 @@
+{
+  "title": "UbuntuのPython環境を見直す",
+  "closed": false,
+  "archived": false,
+  "created_at": "2020-11-23",
+  "comments": [
+    {
+      "author": "nakano16180",
+      "created_at": "2020-11-23",
+      "body_markdown": "## 経緯\n- パッケージ管理用にpipを導入\n  - ```$ sudo apt install python3-pip```\n- プロジェクトのパッケージ管理にpipenvを導入\n  - ```pip3 install pipenv```\n- pipenvインストール後、調べてみるとaptでインストールしたpipのパスが変わっていた"
+    },
+    {
+      "author": "nakano16180",
+      "created_at": "2020-11-23",
+      "body_markdown": "## 解決方法\n- pipenvのリポジトリではpipxを推奨していたので、これを導入し再度pipenvをインストール\n- pipxを導入\n  - ```$ sudo apt install python3-venv```\n  - ```$ python3 -m pip install --user pipx```\n  - ```$ python3 -m pipx ensurepath```\n- pipenvを再インストール\n  - ```$ pipx install pipenv```"
+    },
+    {
+      "author": "nakano16180",
+      "created_at": "2021-01-28",
+      "body_markdown": "python公式によるとUbuntu標準のpythonをそのまま使うのはあんまりよくなさそう？\nUbuntuのシステムが使うやつと自分が開発で使うpythonを明示的に分ける場合、自分が使うpythonのインストールはpyenv使うのが簡単そう\n\npipenvにある指定したバージョンのpythonの自動インストール機能も使えるようになるし"
+    }
+  ]
+}

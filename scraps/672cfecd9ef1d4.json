@@ -1,0 +1,19 @@
+{
+  "title": "WSL2環境構築　2025",
+  "closed": false,
+  "archived": false,
+  "created_at": "2025-05-17",
+  "comments": [
+    {
+      "author": "nakano16180",
+      "created_at": "2025-05-17",
+      "body_markdown": "パッケージマネージャーに[brew](https://docs.brew.sh/Homebrew-on-Linux)を採用した\n\n先に必要なものをインストール\n```\nsudo apt-get install build-essential procps curl file git\n```\n\nそのあとbrewをインストール\n```\n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"\n```\n\n[jq](https://github.com/jqlang/jq)とか[sq](https://github.com/neilotoole/sq)とか[gh](https://github.com/cli/cli)入れとくと便利\n",
+      "body_updated_at": "2025-05-18"
+    },
+    {
+      "author": "nakano16180",
+      "created_at": "2025-05-18",
+      "body_markdown": "## シェルの変更\n- デフォルトのシェルをzshに変更する\n- [Oh My Zsh](https://ohmyz.sh/)をインストール\n\nフォントをWSLではなくWindows側に入れるのと、WindowsTerminalから設定を変えるところが注意点\n\n### 参考記事\n- [Ubuntu 24.04 on WSL2にZSHをインストール](https://zenn.dev/yusuke_m/articles/87d8b6f0f188a5)\n- [【WSL2】WSL2環境でOh my zshを入れてAgnosterのテーマを適用する #Ubuntu - Qiita](https://qiita.com/kazuki_yoshida/items/a66a52ef813e168195bb)"
+    }
+  ]
+}

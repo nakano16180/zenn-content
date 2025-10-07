@@ -1,0 +1,38 @@
+{
+  "title": "ソフトウェアテストについて調べている",
+  "closed": false,
+  "archived": false,
+  "created_at": "2024-03-24",
+  "comments": [
+    {
+      "author": "nakano16180",
+      "created_at": "2024-03-24",
+      "body_markdown": "最近仕事でテストコードを書く機会があり、というよりテストコードを書くための土台を整備するのがメインだったのでひたすら調べて読んだものをメモしていくことにした。"
+    },
+    {
+      "author": "nakano16180",
+      "created_at": "2024-03-24",
+      "body_markdown": "## 前提\n- Go/Echo\n- クリーンアーキテクチャ\n- DBアクセスを伴う部分のテストを書きたい"
+    },
+    {
+      "author": "nakano16180",
+      "created_at": "2024-03-24",
+      "body_markdown": "- [Go の Test に対する考え方 #Go - Qiita](https://qiita.com/Jxck/items/8717a5982547cfa54ebc)\n- [Go言語でユニットテスト, テストしやすいコードとモックを書く #Go - Qiita]( https://qiita.com/hiroyky/items/4a9be463e752d5c0c41c)\n\nPythonでテストを書いたことはあって、その時はひたすらassert.Equal()みたいなことをしていた記憶がある\nしかし、Goには標準のテストパッケージtestingにassertはなさそう。\n上の記事で触れられてるパッケージ入れてもいいけど、いったん標準パッケージだけでやっていく"
+    },
+    {
+      "author": "nakano16180",
+      "created_at": "2024-03-24",
+      "body_markdown": "- [Golang Echoでのテスト駆動のAPI開発 #Go - Qiita]( https://qiita.com/kiyc/items/c20ac7bb6997c0753314)\n\nAPIサーバーとしてのテストならhttptest使って入力と出力与えて比較みたいなのが簡単そう"
+    },
+    {
+      "author": "nakano16180",
+      "created_at": "2024-03-25",
+      "body_markdown": "[GolangでDBアクセスがあるユニットテストのやり方を考える #Go - Qiita]( https://qiita.com/seya/items/582c2bdcca4ad50b03b7)\n[Goにおけるテスト用DB分離のテクニック]( https://zenn.dev/shuymn/articles/9a5df9b193ae9f)\n\nテスト用のDBはコンテナ立てるかモックするか、クリーンアップをどうするかは考えどころ。\nテストデータに関しては、マイグレーションで用意するよりはテストコードでCRUD処理と一緒に書けばいいかと考えている"
+    },
+    {
+      "author": "nakano16180",
+      "created_at": "2024-03-27",
+      "body_markdown": "[テスト環境を作成する！golangでクリーンな単体テスト環境をdocker testで作成する方法について – APPSWINGBY Developers Blog]( https://dev.appswingby.com/golang/%E3%83%86%E3%82%B9%E3%83%88%E7%92%B0%E5%A2%83%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B%EF%BC%81golang%E3%81%A7%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%81%AA%E5%8D%98%E4%BD%93%E3%83%86%E3%82%B9/)\n[E2E / Integration Testing in Golang with ory/dockertest | by Sidharthan Chandrasekaran Kamaraj | The Bug Shots | Medium]( https://medium.com/the-bug-shots/e2e-integration-testing-in-golang-with-ory-dockertest-ae688af77db5)\n[How To Run Go Integration Tests Using Docker | The GoDev Corner]( https://medium.com/the-godev-corner/how-to-run-go-integration-tests-for-third-party-services-using-docker-b8104a943c4)\n\n一番簡単そうに思ったのがDBコンテナを立てる方法。ローカルで開発中はDBコンテナ立てているだろうから、それにつないで一通り操作をすればテストできるともいえる。\n問題はこれをCIで自動化したいとき。CI上でもDBコンテナとアプリケーションを立ち上げることはできるだろうけど、立ち上げスクリプトを書く必要がありそうという点が引っ掛かりポイント\n\n[dockertest](https://github.com/ory/dockertest)をつかえば、Goのコードでコンテナの立ち上げから片付けまで書けるらしい"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "title": "共有できる開発環境を作る",
+  "closed": false,
+  "archived": false,
+  "created_at": "2025-03-20",
+  "comments": [
+    {
+      "author": "nakano16180",
+      "created_at": "2025-03-20",
+      "body_markdown": "以下の記事を試した記録\nhttps://dev.classmethod.jp/articles/tried-devbox-that-can-easily-create-isolated-shells-for-development/"
+    },
+    {
+      "author": "nakano16180",
+      "created_at": "2025-03-20",
+      "body_markdown": "ESlintも追加\nhttps://zenn.dev/hiroko_ino/articles/eslint-prettier-husky-2022"
+    },
+    {
+      "author": "nakano16180",
+      "created_at": "2025-03-20",
+      "body_markdown": "作ったリポジトリ\nNodejsのバージョン上げないとなぁ\nhttps://github.com/nakano16180/shareable_dev_env"
+    }
+  ]
+}

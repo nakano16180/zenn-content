@@ -1,0 +1,28 @@
+{
+  "title": "FitbitのWebAPIを試す",
+  "closed": false,
+  "archived": false,
+  "created_at": "2025-04-13",
+  "comments": [
+    {
+      "author": "nakano16180",
+      "created_at": "2025-04-13",
+      "body_markdown": "とりあえずアプリ登録\n[https://www.fitbit.com/dev](https://www.fitbit.com/dev)\n\n![](https://storage.googleapis.com/zenn-user-upload/46c2258fe15b-20250413.png)"
+    },
+    {
+      "author": "nakano16180",
+      "created_at": "2025-04-13",
+      "body_markdown": "次の画面でOAuth2.0 Tutorialに進んでアクセストークンを発行する"
+    },
+    {
+      "author": "nakano16180",
+      "created_at": "2025-04-13",
+      "body_markdown": "OpenAPIでとりえずガチャガチャできる環境も用意されているのでアイデア練るにはいいかも\nhttps://dev.fitbit.com/build/reference/web-api/explore/"
+    },
+    {
+      "author": "nakano16180",
+      "created_at": "2025-04-13",
+      "body_markdown": "## 参考\n\n- [はじめてのFitbit API｜株式会社fin](https://note.com/fin_agetech/n/n65575a395ad9)\n- [FitbitのWeb APIを実行する方法](https://www.zenryoku-kun.com/post/fitbit-api)"
+    }
+  ]
+}

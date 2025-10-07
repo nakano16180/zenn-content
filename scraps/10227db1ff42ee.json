@@ -1,0 +1,23 @@
+{
+  "title": "WSL2でslack cli入れてみた",
+  "closed": false,
+  "archived": false,
+  "created_at": "2025-08-21",
+  "comments": [
+    {
+      "author": "nakano16180",
+      "created_at": "2025-08-21",
+      "body_markdown": "まずはドキュメントに従う\nhttps://docs.slack.dev/tools/slack-cli/guides/installing-the-slack-cli-for-mac-and-linux/"
+    },
+    {
+      "author": "nakano16180",
+      "created_at": "2025-08-21",
+      "body_markdown": "![](https://storage.googleapis.com/zenn-user-upload/f08e987abc1e-20250821.png)\nできた！と思ってよく見たらシンボリックリンクの作成に失敗していた\n\n解決方法は公式にも書いてある以下のコマンドを実行\n\n```\n$ sudo mkdir -p -m 775 /usr/local/bin\n$ sudo ln -sf \"$HOME/.slack/bin/slack\" \"/usr/local/bin/slack\"\n```"
+    },
+    {
+      "author": "nakano16180",
+      "created_at": "2025-08-22",
+      "body_markdown": "上記対応でslackコマンドが使えるようになるが、denoはインストールされないことに注意。\nついでに言うと、2025年9月1日以降denoのインストールステップは消えるそう。\n\nそもそもbolt appsの開発だけならdenoもなくていいらしい。"
+    }
+  ]
+}

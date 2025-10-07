@@ -1,0 +1,30 @@
+{
+  "title": "Python環境構築2025",
+  "closed": false,
+  "archived": false,
+  "created_at": "2025-04-24",
+  "comments": [
+    {
+      "author": "nakano16180",
+      "created_at": "2025-04-24",
+      "body_markdown": "環境：WSL（Ubuntu24.04）\nPythonバージョン：3.12\n\n![](https://storage.googleapis.com/zenn-user-upload/03a8ca58555b-20250424.png)\n"
+    },
+    {
+      "author": "nakano16180",
+      "created_at": "2025-04-24",
+      "body_markdown": "グローバルでpipが使えなくなったっぽい？\n代わりに[pipx](https://github.com/pypa/pipx)を入れる\n\nこれはおもにPython製のCLIアプリケーションを管理するためのモノ\nプロジェクトの依存ライブラリを管理するためのパッケージマネージャーとは別",
+      "body_updated_at": "2025-04-24"
+    },
+    {
+      "author": "nakano16180",
+      "created_at": "2025-04-24",
+      "body_markdown": "パッケージマネージャーには[uv](https://github.com/astral-sh/uv)を使うとよさそう\n現時点でデファクトっぽい感じをXから感じた\n\n",
+      "body_updated_at": "2025-04-24"
+    },
+    {
+      "author": "nakano16180",
+      "created_at": "2025-04-29",
+      "body_markdown": "既存のリポジトリでpipenvを使っていたので、uvに移行してみた。\nありがたいことに、uvに移行するためのツールも用意されていたので、以下のREADME見てコマンド一発で移行できた\n\nhttps://github.com/mkniewallner/migrate-to-uv"
+    }
+  ]
+}

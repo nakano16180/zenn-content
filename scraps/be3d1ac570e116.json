@@ -1,0 +1,43 @@
+{
+  "title": "Windowsで環境構築",
+  "closed": false,
+  "archived": false,
+  "created_at": "2022-04-11",
+  "comments": [
+    {
+      "author": "nakano16180",
+      "created_at": "2022-04-11",
+      "body_markdown": "PowerShellが文字化けしているときは文字コードかフォントを変更すると直せる"
+    },
+    {
+      "author": "nakano16180",
+      "created_at": "2022-04-11",
+      "body_markdown": "MS公式のパッケージマネージャー「winget」を使うとコマンドでアプリをインストールできる\njsonファイルを使って一括インストールもできるっぽい\n\n[import コマンド | Microsoft Docs](https://docs.microsoft.com/ja-jp/windows/package-manager/winget/import)\n"
+    },
+    {
+      "author": "nakano16180",
+      "created_at": "2022-04-11",
+      "body_markdown": "wingetの一括インストールをさらに使いやすくするやつ\nwinget コマンドの拡張ではないので注意\n\n[wingetでアプリのインストーラーオプションに対応したパッケージ管理モジュール「posh-winget」をリリースしました](https://zenn.dev/nuits_jp/articles/29211103-release-posh-winget)"
+    },
+    {
+      "author": "nakano16180",
+      "created_at": "2022-04-11",
+      "body_markdown": "[破壊しやすいWindows環境を作ろう（後編） | 東京工業大学デジタル創作同好会traP](https://trap.jp/post/1356/)\n"
+    },
+    {
+      "author": "nakano16180",
+      "created_at": "2022-05-04",
+      "body_markdown": "とりあえずはじめにコマンド試すぐらいならこれ見て触ってみるのもいい\n\n[winget tips - Qiita](https://qiita.com/whim0321/items/de42714d18ece6a59764)"
+    },
+    {
+      "author": "nakano16180",
+      "created_at": "2022-05-04",
+      "body_markdown": "WindowsでのDocker利用に関するドキュメントがまとまっている\n[コンテナーを使用するリモート開発のための Docker の概要 | Microsoft Docs](https://docs.microsoft.com/ja-jp/windows/dev-environment/docker/overview)\n\nwsl2をバックエンドにdocker desctopが動くのか？\n"
+    },
+    {
+      "author": "nakano16180",
+      "created_at": "2022-05-04",
+      "body_markdown": "[WSL での Docker コンテナーの概要 | Microsoft Docs](https://docs.microsoft.com/ja-JP/windows/wsl/tutorials/wsl-containers)\n"
+    }
+  ]
+}

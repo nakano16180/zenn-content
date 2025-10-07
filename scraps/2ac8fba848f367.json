@@ -1,0 +1,30 @@
+{
+  "title": "Qiita APIのドキュメントを眺めてアイデアを考える",
+  "closed": false,
+  "archived": false,
+  "created_at": "2025-03-30",
+  "comments": [
+    {
+      "author": "nakano16180",
+      "created_at": "2025-03-30",
+      "body_markdown": "APIドキュメントのリンクはここ\nhttps://qiita.com/api/v2/docs"
+    },
+    {
+      "author": "nakano16180",
+      "created_at": "2025-03-30",
+      "body_markdown": "ストックAPIとか使えそう。\n\nhttps://qiita.com/api/v2/docs#get-apiv2usersuser_idstocks\n\n指定したユーザーのストックした記事をストックした日時順で返してくれる。\n今週ストックした記事一覧をスプシに出力とかできそうだな。",
+      "body_updated_at": "2025-04-25"
+    },
+    {
+      "author": "nakano16180",
+      "created_at": "2025-04-25",
+      "body_markdown": "アクセストークンの発行は[ここ](https://qiita.com/settings/tokens/new)から",
+      "body_updated_at": "2025-04-25"
+    },
+    {
+      "author": "nakano16180",
+      "created_at": "2025-04-25",
+      "body_markdown": "APIで取得した記事一覧をスプシに転記する例\nhttps://qiita.com/studio_meowtoon/items/6627b2f8980d5a484568"
+    }
+  ]
+}
