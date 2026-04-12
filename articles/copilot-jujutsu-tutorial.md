@@ -8,7 +8,7 @@ topics:
   - "git"
   - "githubcopilot"
   - "vcs"
-published: false
+published: true
 ---
 
 :::message
